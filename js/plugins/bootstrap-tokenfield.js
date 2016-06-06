@@ -268,7 +268,7 @@
           parseInt($tokenLabel.css('margin-left'), 10) -
           parseInt($tokenLabel.css('margin-right'), 10)
       }
-
+   
       $tokenLabel
         .text(attrs.label)
         .css('max-width', this.maxTokenWidth)
@@ -312,6 +312,15 @@
 
       // Update tokenfield dimensions
       this.update()
+
+    var span_text = " "; 
+     $(".tokenfield span.token-label").each(function() {
+    span_text += $(this).text() + "|";
+});
+
+var a = span_text.substring(0, span_text.length - 1); // remove the trailing | character.
+console.log(a);
+
 
       // Return original element
       return this.$element.get(0)
@@ -851,6 +860,16 @@
       // Adjust input width
       this.$input.css('width', this.options.minWidth + 'px')
       this.update()
+
+var span_text = " "; 
+     $(".tokenfield span.token-label").each(function() {
+      span_text += $(this).text() + "|";
+  });
+
+var a = span_text.substring(0, span_text.length - 1); // remove the trailing | character.
+console.log(a);
+
+
 
       // Cancel original event handlers
       e.preventDefault()
