@@ -1,0 +1,76 @@
+/***************************		
+1.		COMMON CSS
+2.		NAV
+3.		HOME PAGE
+4.		CONTENT
+5.		fOOTER
+***************************/
+
+/*Reference Links
+
+*/
+
+/*PRIMARY COLOR: #30abd5 | LIGHT SHADE: #795E89 | SECONDARY COLOR: #02405D */
+
+html,body{padding: 0; margin: 0; height: 100%; line-height: 20px; font-size: 100%; font-family: 'Lato', Calibri, Arial, sans-serif; font-weight:300 }
+a,a:hover,a:focus {text-decoration:none; }
+
+a, 
+a:hover,
+button, 
+button:hover {
+	-webkit-transition:all .3s ease-out;
+	   -moz-transition:all .3s ease-out;
+			transition:all .3s ease-out;
+}
+
+a:focus,
+button:focus {outline:none!important;}
+
+ul {list-style-type:none; padding-left:0; margin-bottom:0;}
+
+.link-txt {color:#5a1385;}
+.link-txt:hover,
+.link-txt:focus {color:#5a1385; text-decoration:underline;}
+
+.center{text-align:center;}
+
+/*---MARGIN---*/
+.mr-4{margin-right: 4em}
+
+/*---COLORS---*/
+.primary-bg-clr{background-color:#30abd5;}
+.secondary-bg-clr{background-color:#056495;}
+
+/*---HEADING---*/
+h1,h2,h3,h4,h5,h6{font-family: 'Lato', Calibri, Arial, sans-serif; margin:0;}
+
+p{margin-bottom: 0}
+h1{font-size: 50px; font-weight: 600;}
+
+/*TITLE*/
+.title{border-bottom: 1px solid #eee; padding-bottom: 1em; margin-bottom: 2em;}
+
+
+/*SECTION-CSS*/
+.form,.buttons,.titles-list, .img-hover{padding: 3em 0;}
+
+
+/*---------------------------
+      TITLE-CSS
+----------------------------*/
+/*TITLE*/
+.title-center{display: block; font-size: 2em; line-height: 1.3; margin: 0; font-weight: 300; margin-bottom: 1em; padding-bottom: 1em;}
+.title-center h2{position: relative; display: inline-block;}
+.title-center h2:after{content:''; position:absolute; left:0; right:0; bottom:-25px; margin: 10px auto; width:50%; height:3px; background:#3F51B5;}
+
+/*title-left*/
+.title-left{display: block; font-size: 2em; line-height: 1.3; margin: 0; font-weight: 300; margin-bottom: 1em; padding-bottom: 1em;}
+.title-left h2{position: relative; display: inline-block;}
+.title-left h2:after{content:''; position:absolute; left:0; right:0; bottom:-15px; width:50%; height:3px; background:#3F51B5;}
+
+/*title-left*/
+.title-right{display: block; font-size: 2em; line-height: 1.3; margin: 0; font-weight: 300; margin-bottom: 1em; padding-bottom: 1em;}
+.title-right h2{position: relative; display: inline-block;}
+.title-right h2:after{content:''; position:absolute; right:0; bottom:-15px; width:50%; height:3px; background:#3F51B5;}
+
